@@ -13,6 +13,7 @@ plan
    		prediction is wrong.
 """
 
+# gfg implementation + blog
 
 class Perceptron:
 	def __init__(self, learning_rate=0.1):
@@ -34,6 +35,9 @@ class Perceptron:
 		self.weights = [0] * len(training_inputs[0])
 
 		for _ in range(rounds):
+
+
+			# check this part
 			for inputs, answer in zip(training_inputs, answers):
 				prediction = self.predict(inputs)
 				error = answer - prediction
