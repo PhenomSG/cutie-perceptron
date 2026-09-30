@@ -14,7 +14,20 @@ This is XOR problem and cannot be solved using single perceptron.
 This proves that a single perceptron can only solve a "linearly seperable problem".
 """
 import random
+"""
+That number is called the seed of the sequence. 
+If you don't set one yourself, the computer will come up with one on its own, 
+and this will most likely differ from the one it picked last time you ran the program, 
+so things look random. But you can set the seed explicitly yourself, to prevent that from happening.
+You will still get a random-looking sequence, but as long as the seed is the same, 
+you will get the same sequence every time you run the program.
 
+Consider the Roguelike genre of games, where all of levels, items, enemies, and so forth are 
+generated randomly every time you play. Many Roguelike games allow you to set a seed for the 
+random number generator as a kind of password: as long as you use the same seed, you'll get 
+the same game every time. Or, if you have a really interesting run, you can share its seed with 
+your friends so they can play it too.
+"""
 random.seed(42)
 
 train = [(0,0,0),
