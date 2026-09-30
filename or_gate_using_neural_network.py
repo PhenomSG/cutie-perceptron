@@ -1,6 +1,6 @@
 """
-AND GATE
-    -   1 only if all 1
+OR GATE
+    -   0 only if all 0
 
 Steps in perceptron Algorithm
     1. Initialise weights values and biases
@@ -49,7 +49,7 @@ def trainz(train: list):
     epochs = 10
 
     for epoch in range(epochs):
-        print(f"Epoch {epoch}")
+        print(f"Epoch {epoch+1}")
         cnt = 0
         for x1,x2,o in train:
             t = op_calc(w1,w2,b,x1,x2)
